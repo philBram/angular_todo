@@ -1,0 +1,11 @@
+<form class="form border p-3 border-2 border-dark rounded mt-3">
+    <label for="dueDate">Due Date</label>
+    <input id="dueDate" name="dueDate" type="date" class="form-control" 
+    [(ngModel)]="todoApiItem.dateTodo">
+
+    <label for="todoName" class="mt-3">Name of todo</label>
+    <input id="todoName" name="todoName" type="text" class="form-control"
+    [(ngModel)]="todoApiItem.todoName">
+
+    <button class="btn btn-success mt-3" (click)="addApiItemClicked()">Random</button>
+</form>

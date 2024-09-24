@@ -1,0 +1,15 @@
+<div class="container-fluid mt-5 mr-5">
+    <div class="row">
+        <div class="col-8">
+            <app-todo-list-presenter [todoList]="todoList" (deleteItem)="deleteItem($event)"
+            (editItem)="editItem($event)"></app-todo-list-presenter>
+        </div>
+        <div class="col-4">
+            <app-add-todo-item-presenter [todoItem]="todoItem" (addItem)="addItem()"></app-add-todo-item-presenter>
+            <div class="row">
+                <app-add-todo-item-api-presenter [todoApiItem]="todoApiItem" 
+                (addApiItem)="addApiItem()"></app-add-todo-item-api-presenter>
+            </div>
+        </div>
+    </div>
+</div>
